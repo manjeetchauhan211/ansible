@@ -4,7 +4,7 @@ pipeline{
         stage('Deploy webserver'){
             steps{
                 script{
-                echo "Running ansible"
+                echo "Running ansible now"
            //     ansiblePlaybook colorized: true, credentialsId: 'ansible-id', inventory: 'hosts', playbook: 'tomcat-setup.yml'
                 }
             }
