@@ -1,0 +1,19 @@
+pipeline{
+    agent{ label 'master' }
+    stages{
+        stage('Git checkout'){
+            steps{
+                git url: '' , branch: 'master'
+            }
+        }
+
+        stage('Deploy webserver'){
+            steps{
+                script{
+                    ansible playbook
+                }
+            }
+        }
+
+    }
+}
