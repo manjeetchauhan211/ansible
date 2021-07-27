@@ -5,7 +5,7 @@ pipeline{
             steps{
                 script{
                 echo "Running ansible"
-//                    ansiblePlaybook colorized: true, credentialsId: 'ansible-id', inventory: 'hosts', playbook: 'tomcat-setup.yml'
+                ansiblePlaybook colorized: true, credentialsId: 'ansible-id', inventory: 'hosts', playbook: 'tomcat-setup.yml'
                 }
             }
         }
